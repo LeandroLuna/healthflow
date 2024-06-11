@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { GithubIcon } from "../assets/icons/GithubIcon";
+import { TailcastLogo } from "../assets/images/logos/TailcastLogo";
+import { GithubIcon } from "../assets/images/icons/GithubIcon";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
@@ -29,16 +29,6 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          {/* <a href="/#home" aria-label="Home">
-            <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white mr-2 text-6xl">
-                <TailcastLogo />
-              </div>
-              <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
-              </div>
-            </div>
-          </a> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -59,25 +49,6 @@ export const Navbar = () => {
             ))}
           </div>
         </motion.div>
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
-        >
-          <div className="grow basis-0 justify-end hidden lg:flex">
-            <a
-              className="text-white main-border-gray rounded-xl
-           bg-bgDark2 hover:bg-bgDark3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/matt765/Tidestream"
-              target="_blank"
-              aria-label="source code"
-            >
-              <GithubIcon />
-              <span className="pt-px">Source code</span>
-            </a>
-          </div>
-        </motion.div> */}
         <div
           className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgDark2"
           onClick={() => setIsOpen(!isOpen)}
@@ -112,14 +83,6 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              {/* <a
-                className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                <GithubIcon />
-                Source code
-              </a> */}
             </div>
           </motion.div>
         )}

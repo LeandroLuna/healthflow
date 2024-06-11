@@ -5,13 +5,13 @@ import { InvitationModal } from "./InvitationModal";
 import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
 import feature5 from "../assets/images/feature5.jpg";
 import feature6 from "../assets/images/feature6.jpg";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import { CheckArrowIcon } from "../assets/images/icons/CheckArrowIcon";
 
-export const FeaturesDiagonal = () => {
+export const AboutUs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1">
+    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1" id="about-us">
       <div className="shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
