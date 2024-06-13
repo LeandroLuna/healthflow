@@ -3,29 +3,34 @@ import { motion } from "framer-motion";
 
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
+    question: "Quais hospitais podem se beneficiar da solução da HealthFlow?",
     answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+      "Nossa solução é adequada para hospitais de todos os tamanhos, desde pequenas clínicas até grandes centros médicos. Qualquer instituição que queira melhorar a eficiência operacional e a experiência dos pacientes pode se beneficiar das nossas ferramentas.",
   },
   {
-    question: "How to claim your 25% discount offer?",
+    question: "O sistema da HealthFlow é compatível com outros sistemas hospitalares?",
     answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
+      "Sim, nossa solução foi projetada para integrar-se perfeitamente com sistemas hospitalares existentes, como EHRs (Electronic Health Records) e sistemas de gerenciamento hospitalar. Isso facilita a implementação e garante uma operação contínua.",
   },
   {
-    question: "What's your refund policy?",
+    question: "Quais são os requisitos para instalar a solução da HealthFlow?",
     answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
+      "A instalação da nossa solução requer a implementação de beacons, dependendo dos módulos selecionados, e a configuração de nossa plataforma de software. Nossa equipe de suporte fornecerá todas as orientações necessárias e estará disponível para ajudar durante todo o processo de instalação.",
   },
   {
-    question: "How to get support for the product?",
+    question: "Como posso obter suporte para o produto?",
     answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+      "Nossa dedicada equipe de suporte está aqui para ajudar. Você pode nos contatar através do formulário de contato em nosso site, enviar um e-mail ou conversar conosco via chat ao vivo. Ficaremos felizes em ajudar com quaisquer perguntas ou preocupações que você possa ter.",
+  },
+  {
+    question: "Como é garantida a segurança dos dados coletados?",
+    answer:
+      "Levamos a segurança dos dados muito a sério. Utilizamos criptografia de ponta a ponta e seguimos as melhores práticas da indústria para proteger todas as informações coletadas e processadas por nossa solução.",
   },
 ];
 
 export const FAQ = () => (
-  <section className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden">
+  <section className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-bgDark1 overflow-hidden">
     <div className="absolute -top-10" id="FAQ" />
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,9 +40,9 @@ export const FAQ = () => (
     >
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
-          <p className="mb-7 block-subtitle text-center">Have any questions?</p>
+          <p className="mb-7 block-subtitle text-center">Tem alguma pergunta?</p>
           <h2 className="mb-16 block-big-title text-center">
-            Frequently Asked Questions
+            Perguntas frequentes
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
             {FAQData.map((item, index) => (

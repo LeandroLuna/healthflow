@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 
 import { QuoteIcon } from "../assets/images/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
+import member1 from "../assets/images/member1.jpeg";
+import member2 from "../assets/images/member2.jpeg";
+import member3 from "../assets/images/member3.png";
+import member4 from "../assets/images/member4.jpeg";
 
 const membersData = [
   {
@@ -11,7 +12,7 @@ const membersData = [
     job: "COO & Co-founder",
     description: `Gustavo está cursando Engenharia de Computação na FIAP. Possui habilidades em C#, .NET, React e TypeScript.
       Atualmente, trabalha como estagiário no FI Group.`,
-    image: testimonial1,
+    image: member1,
   },
   {
     name: "Leandro Luna",
@@ -19,13 +20,13 @@ const membersData = [
     description: `Leandro é estudante de Engenharia da Computação com experiência em Angular 2+, Java, React, Python e DevOps.
       Ele possui certificações AWS e Azure, e está cursando MBA em IA e Big Data no ICMC-USP.
       Trabalhou como Desenvolvedor Junior, como Desenvolvedor Frontend e como Suporte Técnico na FIAP.`,
-    image: testimonial2,
+    image: member2,
   },
   {
     name: "Leonardo Chen",
     job: "CFO & Co-founder",
     description: "Leonardo é estudante de engenharia da computação na FIAP, focado em desenvolver habilidades práticas em diversas tecnologias.",
-    image: testimonial3,
+    image: member3,
   },
   {
     name: "Marcos Santos",
@@ -33,7 +34,7 @@ const membersData = [
     description: `Marcos é estudante de Engenharia de Computação com experiência em Java, React e JavaScript.
       Atuou como estagiário no Itaú Unibanco e como analista de sistema no Atacadão.
       Atualmente, trabalha como analista de dados no Itaú Unibanco.`,
-    image: testimonial3,
+    image: member4,
   },
 ];
 
@@ -60,12 +61,13 @@ export const Team = () => (
             >
               <div className="content-text-white">{member.description}</div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <div>
+                <div className="flex items-center">
                   <img
                     src={member.image.src}
                     alt="Member avatar"
                     width="45px"
                     height="5px"
+                    className="rounded-full"
                     aria-label={member.name}
                   />
                 </div>

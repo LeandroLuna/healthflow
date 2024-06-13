@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { TailcastLogo } from "../assets/images/logos/TailcastLogo";
-import { GithubIcon } from "../assets/images/icons/GithubIcon";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },

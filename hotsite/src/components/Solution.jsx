@@ -12,7 +12,7 @@ import { CheckArrowIcon } from "../assets/images/icons/CheckArrowIcon";
 export const Solution = () => {
   return (
       <section
-          className="w-full bg-bgDark2 pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0    md:pt-[12vw] lg:pt-16"
+          className="w-full bg-bgDark2 pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0 md:pt-[12vw] lg:pt-16"
           id="solution"
         >
           <motion.div
@@ -24,27 +24,25 @@ export const Solution = () => {
             <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
               <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
                 <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-                  <span className="block-subtitle">Embrace Innovation</span>
+                  <span className="block-subtitle">Revolucione a gestão hospitalar</span>
                   <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-                    Unlike any tool you used before
+                    HealthFlow: O futuro da gestão em saúde
                   </h2>
                   <p className="mb-10 text-secondaryText leading-loose">
-                    Discover a new level of data analysis with our innovative and
-                    user-friendly platform. Transform your business needs with
-                    actionable insights.
+                    O HealthFlow transforma a gestão hospitalar com uma plataforma avançada de Hospital System Information (HIS), integrada com Inteligência Artificial. Nossa solução utiliza análise de dados, geolocalização e visão computacional para otimizar o fluxo de pacientes e recursos, oferecendo uma gestão informada 360°.
                   </p>
                   <ul className="mb-6 text-primaryText">
                     <li className="mb-4 flex">
                       <CheckArrowIcon />
-                      <span>Real-time data visualization</span>
+                      <span>Sistema de localização indoor</span>
                     </li>
                     <li className="mb-4 flex">
                       <CheckArrowIcon />
-                      <span>Advanced predictive analytics</span>
+                      <span>Agendamentos inteligente</span>
                     </li>
                     <li className="mb-4 flex">
                       <CheckArrowIcon />
-                      <span>Seamless integration with APIs</span>
+                      <span>Alertas de congestionamento</span>
                     </li>
                   </ul>
                 </div>
@@ -54,35 +52,35 @@ export const Solution = () => {
                   <div className="mb-4 py-3 pl-3 pr-2 rounded">
                     <img
                       src={feature1.src}
-                      alt="Feature image 1"
-                      className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
-                      aria-label="Feature image 1"
+                      alt="Monitoramento de leitos"
+                      className="rounded-xl main-border-gray mx-auto sm:mx-unset"
+                      aria-label="Monitoramento de leitos"
                     />
                   </div>
                   <div className="py-3 pl-3 pr-2 rounded ">
                     <img
                       src={feature2.src}
-                      alt="Feature image 2"
-                      className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
-                      aria-label="Feature image 2"
+                      alt="Agendamento inteligente"
+                      className="rounded-xl main-border-gray mx-auto sm:mx-unset"
+                      aria-label="Agendamento inteligente"
                     />
                   </div>
                 </div>
-                <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
+                <div className="w-1/2 lg:mt-20 pt-12 lg:pt-0 px-2 hidden sm:inline-block">
                   <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
                     <img
                       src={feature3.src}
-                      alt="Feature image 3"
-                      className="rounded-xl  main-border-gray"
-                      aria-label="Feature image 3"
+                      alt="Alertas de congestionamento"
+                      className="rounded-xl main-border-gray"
+                      aria-label="Alertas de congestionamento"
                     />
                   </div>
                   <div className="py-3 pl-3 pr-2 rounded-lg ">
                     <img
                       src={feature4.src}
-                      alt="Feature image 4"
-                      className="rounded-xl  main-border-gray"
-                      aria-label="Feature image 4"
+                      alt="Comunicação com pacientes"
+                      className="rounded-xl main-border-gray"
+                      aria-label="Comunicação com pacientes"
                     />
                   </div>
                 </div>
@@ -101,15 +99,15 @@ export const Solution = () => {
                 <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
                   <img
                     src={feature5.src}
-                    alt="Feature image 5"
-                    className="rounded-xl  main-border-gray"
+                    alt="Sistema de localização indoor"
+                    className="rounded-xl main-border-gray"
                   />
                 </div>
                 <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
                   <img
                     src={feature6.src}
-                    alt="Feature image 6"
-                    className="rounded-xl  main-border-gray"
+                    alt="Heatmap interativo"
+                    className="rounded-xl main-border-gray"
                   />
                 </div>
               </div>
@@ -117,27 +115,25 @@ export const Solution = () => {
     
             <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
               <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-                <span className="block-subtitle">Make Data-Driven Decisions</span>
+                <span className="block-subtitle">Eficiência e conformidade</span>
                 <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-                  Issue tracking you’ll enjoy using
+                  Saúde otimizada com conformidade
                 </h2>
                 <p className="mb-12 text-secondaryText leading-loose">
-                  Monitor and track data issues with ease using our intuitive and
-                  efficient issue tracking system. Stay ahead of potential problems
-                  and improve your workflow.
+                  HealthFlow não só melhora a gestão hospitalar, mas também segue rigorosamente as regulamentações do HIPAA e outras normas pertinentes, garantindo um ambiente seguro e conforme para todos os dados hospitalares.
                 </p>
                 <ul className="mb-6 text-primaryText">
                   <li className="mb-4 flex">
                     <CheckArrowIcon />
-                    <span>Collaborative environment</span>
+                    <span>Auditoria e relatórios de conformidade</span>
                   </li>
                   <li className="mb-4 flex">
                     <CheckArrowIcon />
-                    <span>Smart issue categorization</span>
+                    <span>Proteção de dados do paciente</span>
                   </li>
                   <li className="mb-4 flex">
                     <CheckArrowIcon />
-                    <span>Customizable notifications</span>
+                    <span>Comunicação clara e eficaz</span>
                   </li>
                 </ul>
               </div>
