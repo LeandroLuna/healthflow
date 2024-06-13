@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { TailcastLogo } from "../assets/images/logos/TailcastLogo";
+import logo from "../assets/images/logos/HealthflowLogo.png";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
@@ -21,13 +20,20 @@ export const Navbar = () => {
       className="w-full h-20 flex flex-col justify-center items-center fixed bg-bgDark1 lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl"
       aria-label="Main navigation"
     >
-      <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-center items-center relative">
+      <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between lg:justify-center items-center relative">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
+           <a href="/#home" aria-label="Home">
+            <div className="flex justify-start items-center grow basis-0">
+              <div className="text-white mr-2 text-6xl">
+                <img src={logo.src} alt="" className="w-20 rounded-xl" />
+              </div>
+            </div>
+          </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
