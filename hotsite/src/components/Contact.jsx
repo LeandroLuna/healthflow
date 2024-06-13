@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    institution: "",
     email: "",
     message: "",
   });
@@ -22,9 +23,10 @@ export const Contact = () => {
 
   return (
     <section
-      className="w-full bg-bgDark2 pt-24 -mt-8 sm:-mt-8 xl:-mt-8 2xl:mt-0 md:pt-[12vw] lg:pt-16"
-      id="contact"
+      className="w-screen flex justify-center bg-bgDark2 relative"
     >
+      <div className="absolute -top-16" id="contact" />
+      <div className="pb-20 pt-12 bg-bgDark2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -50,6 +52,18 @@ export const Contact = () => {
                       id="name"
                       className="w-full px-4 py-2 rounded-lg border main-border-gray bg-bgDark3 text-primaryText"
                       value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="institution" className="block text-primaryText mb-2">Instituição</label>
+                    <input
+                      type="text"
+                      name="institution"
+                      id="institution"
+                      className="w-full px-4 py-2 rounded-lg border main-border-gray bg-bgDark3 text-primaryText"
+                      value={formData.institution}
                       onChange={handleChange}
                       required
                     />
@@ -81,7 +95,7 @@ export const Contact = () => {
                   <div className="flex justify-center">
                     <button
                       type="submit"
-                      className="w-1/2 py-3 mt-4 mb-16 bg-primaryColor rounded-lg text-white hover:bg-secondaryColor transition duration-300"
+                      className="w-1/2 py-3 mt-4 bg-primaryColor rounded-lg text-white hover:bg-secondaryColor transition duration-300"
                     >
                       Enviar
                     </button>
@@ -99,6 +113,8 @@ export const Contact = () => {
           </div>
         </div>
       </motion.div>
+      </div>
+      
     </section>
   );
 };

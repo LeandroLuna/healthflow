@@ -26,7 +26,7 @@ export const Solution = () => {
                 <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
                   <span className="block-subtitle">Revolucione a gestão hospitalar</span>
                   <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-                    HealthFlow: O futuro da gestão em saúde
+                    HealthFlow: o futuro da gestão em saúde
                   </h2>
                   <p className="mb-10 text-secondaryText leading-loose">
                     O HealthFlow transforma a gestão hospitalar com uma plataforma avançada de Hospital System Information (HIS), integrada com Inteligência Artificial. Nossa solução utiliza análise de dados, geolocalização e visão computacional para otimizar o fluxo de pacientes e recursos, oferecendo uma gestão informada 360°.

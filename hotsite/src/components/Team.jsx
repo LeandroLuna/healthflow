@@ -25,7 +25,7 @@ const membersData = [
   {
     name: "Leonardo Chen",
     job: "CFO & Co-founder",
-    description: "Leonardo é estudante de engenharia da computação na FIAP, focado em desenvolver habilidades práticas em diversas tecnologias.",
+    description: "Leonardo é estudante de Engenharia da Computação na FIAP, focado em desenvolver habilidades práticas em diversas tecnologias.",
     image: member3,
   },
   {

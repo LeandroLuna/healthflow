@@ -7,7 +7,7 @@ import { SlackLogo } from "../assets/images/logos/SlackLogo";
 import { SpotifyLogo } from "../assets/images/logos/SpotifyLogo";
 import { StripeLogo } from "../assets/images/logos/StripeLogo";
 
-export const Brands = () => (
+export const Partner = () => (
   <section className="py-12 sm:py-24 bg-bgDark1 w-full  lg:mt-16 mb-8 lg:mb-16">
     <motion.div
       initial={{ opacity: 0 }}

@@ -55,7 +55,7 @@ export const BusinessModel = () => {
             </div>
             <div className="flex flex-wrap flex-col lg:flex-row -mx-4 items-center mt-20">
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-bgDark3 rounded-3xl md:h-[40rem]">
+                <div className="p-8 bg-bgDark3 rounded-3xl md:h-[35rem]">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
                     Implementação rápida
                   </h3>
@@ -98,7 +98,7 @@ export const BusinessModel = () => {
                 </div>
               </div>
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-bgDark3 rounded-3xl md:h-[40rem]">
+                <div className="p-8 bg-bgDark3 rounded-3xl md:h-[35rem]">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
                     Consultoria especializada
                   </h3>
