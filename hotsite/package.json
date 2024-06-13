@@ -1,9 +1,9 @@
 {
-  "name": "tailcast",
+  "name": "healthflow",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "Dark themed website template built on AstroJS, designed for fictional startup",
+  "description": "Hotsite for Healthflow startup",
   "author": {
     "name": "Mateusz Wyrębek (matt765)",
     "email": "mateusz.wyrebek@gmail.com",
