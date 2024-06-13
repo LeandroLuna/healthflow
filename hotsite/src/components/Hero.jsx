@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
-import dashboard from "../assets/images/dashboard.jpg";
+import platform from "../assets/images/platform.webp";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,9 +51,9 @@ export const Hero = () => {
         >
           <div className="relative w-screen flex justify-center mt-20 md:mt-48">
             <img
-              src={dashboard.src}
-              alt="Dashboard image"
-              className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
+              src={platform.src}
+              alt="Platform image"
+              className="w-4/5 2xl:w-[1000px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
             />
           </div>
         </motion.div>

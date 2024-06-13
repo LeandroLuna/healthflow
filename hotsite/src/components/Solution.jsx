@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
-import feature5 from "../assets/images/feature5.jpg";
-import feature6 from "../assets/images/feature6.jpg";
+import feature1 from "../assets/images/feature1.png";
+import feature2 from "../assets/images/feature2.png";
+import feature3 from "../assets/images/feature3.png";
+import feature4 from "../assets/images/feature4.png";
+import feature5 from "../assets/images/feature5.png";
+import feature6 from "../assets/images/feature6.png";
 
 import { CheckArrowIcon } from "../assets/images/icons/CheckArrowIcon";
 
@@ -21,7 +21,7 @@ export const Solution = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+            <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16 mb-12 lg:mb-40">
               <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
                 <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
                   <span className="block-subtitle">Revolucione a gestão hospitalar</span>
@@ -31,18 +31,26 @@ export const Solution = () => {
                   <p className="mb-10 text-secondaryText leading-loose">
                     O HealthFlow transforma a gestão hospitalar com uma plataforma avançada de Hospital System Information (HIS), integrada com Inteligência Artificial. Nossa solução utiliza análise de dados, geolocalização e visão computacional para otimizar o fluxo de pacientes e recursos, oferecendo uma gestão informada 360°.
                   </p>
-                  <ul className="mb-6 text-primaryText">
+                  <ul className="lg:mb-6 text-primaryText">
                     <li className="mb-4 flex">
                       <CheckArrowIcon />
-                      <span>Sistema de localização indoor</span>
+                      <span>Sistema de localização em tempo-real</span>
                     </li>
                     <li className="mb-4 flex">
                       <CheckArrowIcon />
-                      <span>Agendamentos inteligente</span>
+                      <span>Monitoramento de leitos</span>
                     </li>
                     <li className="mb-4 flex">
                       <CheckArrowIcon />
-                      <span>Alertas de congestionamento</span>
+                      <span>Relatórios e análises</span>
+                    </li>
+                    <li className="mb-4 flex">
+                      <CheckArrowIcon />
+                      <span>Gestão de inventário</span>
+                    </li>
+                    <li className="flex">
+                      <CheckArrowIcon />
+                      <span>Heatmap do congestionamento de pacientes</span>
                     </li>
                   </ul>
                 </div>
@@ -52,17 +60,17 @@ export const Solution = () => {
                   <div className="mb-4 py-3 pl-3 pr-2 rounded">
                     <img
                       src={feature1.src}
-                      alt="Monitoramento de leitos"
+                      alt="Feature 1"
                       className="rounded-xl main-border-gray mx-auto sm:mx-unset"
-                      aria-label="Monitoramento de leitos"
+                      aria-label="Feature 1"
                     />
                   </div>
                   <div className="py-3 pl-3 pr-2 rounded ">
                     <img
                       src={feature2.src}
-                      alt="Agendamento inteligente"
+                      alt="Feature 2"
                       className="rounded-xl main-border-gray mx-auto sm:mx-unset"
-                      aria-label="Agendamento inteligente"
+                      aria-label="Feature 2"
                     />
                   </div>
                 </div>
@@ -70,17 +78,17 @@ export const Solution = () => {
                   <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
                     <img
                       src={feature3.src}
-                      alt="Alertas de congestionamento"
+                      alt="Feature 3"
                       className="rounded-xl main-border-gray"
-                      aria-label="Alertas de congestionamento"
+                      aria-label="Feature 3"
                     />
                   </div>
                   <div className="py-3 pl-3 pr-2 rounded-lg ">
                     <img
                       src={feature4.src}
-                      alt="Comunicação com pacientes"
+                      alt="Feature 4"
                       className="rounded-xl main-border-gray"
-                      aria-label="Comunicação com pacientes"
+                      aria-label="Feature 4"
                     />
                   </div>
                 </div>
@@ -99,14 +107,14 @@ export const Solution = () => {
                 <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
                   <img
                     src={feature5.src}
-                    alt="Sistema de localização indoor"
+                    alt="Feature 5"
                     className="rounded-xl main-border-gray"
                   />
                 </div>
                 <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
                   <img
                     src={feature6.src}
-                    alt="Heatmap interativo"
+                    alt="Feature 6"
                     className="rounded-xl main-border-gray"
                   />
                 </div>
@@ -122,7 +130,7 @@ export const Solution = () => {
                 <p className="mb-12 text-secondaryText leading-loose">
                   HealthFlow não só melhora a gestão hospitalar, mas também segue rigorosamente as regulamentações do HIPAA e outras normas pertinentes, garantindo um ambiente seguro e conforme para todos os dados hospitalares.
                 </p>
-                <ul className="mb-6 text-primaryText">
+                <ul className="lg:mb-6 text-primaryText">
                   <li className="mb-4 flex">
                     <CheckArrowIcon />
                     <span>Auditoria e relatórios de conformidade</span>
@@ -131,7 +139,7 @@ export const Solution = () => {
                     <CheckArrowIcon />
                     <span>Proteção de dados do paciente</span>
                   </li>
-                  <li className="mb-4 flex">
+                  <li className="flex">
                     <CheckArrowIcon />
                     <span>Comunicação clara e eficaz</span>
                   </li>

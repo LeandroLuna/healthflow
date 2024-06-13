@@ -103,10 +103,10 @@ export const Contact = () => {
                   </div>
                 </form>
               ) : (
-                <div className="text-center">
+                <div className="text-center border border-primaryColor p-8 border-dashed">
                   <h3 className="text-2xl text-primaryText mb-4">Obrigado!</h3>
                   <p className="text-secondaryText leading-loose">
-                    Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.
+                    Sua mensagem foi enviada com sucesso. Entraremos em contato em breve. ;)
                   </p>
                 </div>
               )}

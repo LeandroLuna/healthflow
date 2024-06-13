@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
-import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
-import feature5 from "../assets/images/feature5.jpg";
-import feature6 from "../assets/images/feature6.jpg";
+import feature7 from "../assets/images/feature7.png";
+import feature8 from "../assets/images/feature8.png";
+import feature9 from "../assets/images/feature9.png";
 import { CheckArrowIcon } from "../assets/images/icons/CheckArrowIcon";
 
 export const AboutUs = () => {
@@ -38,21 +38,14 @@ export const AboutUs = () => {
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title">
               Capacitando hospitais com tecnologia de ponta
             </h2>
-            <p className="mb-16 text-secondaryText leading-loose">
+            <p className="lg:mb-16 text-secondaryText leading-loose">
               Na HealthFlow, estamos comprometidos em transformar a gestão hospitalar através de tecnologias inovadoras. Nosso objetivo é proporcionar uma experiência hospitalar mais eficiente e satisfatória tanto para pacientes, quanto para gestores e profissionais de saúde.
             </p>
-            {/* <button
-              className="w-[210px] h-12 contained-button mr-10 "
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Get started"
-            >
-              Get Started
-            </button> */}
           </div>
-          <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
+          <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto py-8 sm:pt-16 lg:pt-0">
             <img
-              src={featuresdiagonal.src}
-              alt="Feature image"
+              src={feature7.src}
+              alt="Feature 7"
               className="rounded-xl  main-border-gray"
             />
           </div>
@@ -69,15 +62,15 @@ export const AboutUs = () => {
           <div className="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
             <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
               <img
-                src={feature5.src}
-                alt="Feature image 5"
-                className="rounded-xl  main-border-gray"
+                src={feature8.src}
+                alt="Feature 8"
+                className="rounded-xl main-border-gray"
               />
             </div>
             <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
               <img
-                src={feature6.src}
-                alt="Feature image 6"
+                src={feature9.src}
+                alt="Feature 9"
                 className="rounded-xl  main-border-gray"
               />
             </div>
@@ -90,7 +83,7 @@ export const AboutUs = () => {
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Transformando o futuro da gestão hospitalar
             </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
+            <p className="lg:mb-12 text-secondaryText leading-loose">
               Queremos ser a referência em soluções de gestão hospitalar, utilizando a Inteligência Artificial para antecipar demandas e otimizar recursos, melhorando a qualidade do atendimento em hospitais e clínicas ao redor do mundo.
             </p>
           </div>
