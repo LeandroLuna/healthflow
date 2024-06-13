@@ -33,6 +33,7 @@ export const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
+        <div className="block-subtitle text-center mb-6">Fale conosco</div>
         <div className="w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl block-big-title">Entre em contato</h2>
@@ -95,7 +96,7 @@ export const Contact = () => {
                   <div className="flex justify-center">
                     <button
                       type="submit"
-                      className="w-1/2 py-3 mt-4 bg-primaryColor rounded-lg text-white hover:bg-secondaryColor transition duration-300"
+                      className="w-1/2 py-2 px-4 mt-4 contained-button"
                     >
                       Enviar
                     </button>

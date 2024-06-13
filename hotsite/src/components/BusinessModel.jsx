@@ -26,12 +26,7 @@ const consultancyFeatures = [
 ];
 
 export const BusinessModel = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleChange = () => {
-    setIsMonthly(!isMonthly);
-  };
 
   return (
     <section className="w-screen flex justify-center bg-bgDark2 relative">
@@ -54,12 +49,12 @@ export const BusinessModel = () => {
               </p>
             </div>
             <div className="flex flex-wrap flex-col lg:flex-row -mx-4 items-center mt-20">
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-bgDark3 rounded-3xl md:h-[35rem]">
+              <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                <div className="p-8 bg-bgDark3 rounded-3xl h-[30rem] xs:h-[25rem] lg:h-[35rem]">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
                     Implementação rápida
                   </h3>
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
+                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-300 leading-loose text-left">
                     Pacotes de implantação rápida com módulos especificos pré-configurados.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-primaryText">
@@ -72,12 +67,12 @@ export const BusinessModel = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="px-8 py-8 bg-bgDark3 rounded-3xl md:h-[40rem]">
+              <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                <div className="px-8 py-8 bg-bgDark3 rounded-3xl h-[35rem] xs:h-[30rem] lg:h-[40rem]">
                   <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-left">
                     Solução completa
                   </h3>
-                  <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
+                  <p className="mt-8 mb-8 2xl:mb-12 text-gray-300 leading-loose text-left">
                     Inclui todos os módulos disponíveis para uma solução abrangente.
                   </p>
                   <ul className="mb-14 text-primaryText">
@@ -89,7 +84,7 @@ export const BusinessModel = () => {
                     ))}
                   </ul>
                   <button
-                    className="inline-block text-center py-2 px-4 w-full contained-button leading-loose transition duration-200 mt-20"
+                    className="inline-block mx-auto text-center py-2 px-4 w-1/2 lg:w-full contained-button bg-primaryColor hover:bg-secondaryColor mt-20"
                     onClick={() => setIsModalOpen(true)}
                     aria-label="Lista de espera"
                   >
@@ -97,12 +92,12 @@ export const BusinessModel = () => {
                   </button>
                 </div>
               </div>
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-bgDark3 rounded-3xl md:h-[35rem]">
+              <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                <div className="p-8 bg-bgDark3 rounded-3xl h-[30rem] xs:h-[25rem] lg:h-[35rem]">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
                     Consultoria especializada
                   </h3>
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
+                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-300 leading-loose text-left">
                     Serviços de consultoria para seleção e implementação de módulos.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-primaryText">

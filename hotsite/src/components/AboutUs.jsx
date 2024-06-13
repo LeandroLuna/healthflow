@@ -39,7 +39,7 @@ export const AboutUs = () => {
               Capacitando hospitais com tecnologia de ponta
             </h2>
             <p className="mb-16 text-secondaryText leading-loose">
-              Na HealthFlow, estamos comprometidos em transformar a gestão hospitalar através de tecnologias inovadoras. Nosso objetivo é proporcionar uma experiência hospitalar mais eficiente e satisfatória tanto para pacientes quanto para gestores e profissionais de saúde.
+              Na HealthFlow, estamos comprometidos em transformar a gestão hospitalar através de tecnologias inovadoras. Nosso objetivo é proporcionar uma experiência hospitalar mais eficiente e satisfatória tanto para pacientes, quanto para gestores e profissionais de saúde.
             </p>
             {/* <button
               className="w-[210px] h-12 contained-button mr-10 "

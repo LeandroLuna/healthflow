@@ -10,7 +10,7 @@ const FAQData = [
   {
     question: "O sistema da HealthFlow é compatível com outros sistemas hospitalares?",
     answer:
-      "Sim, nossa solução foi projetada para integrar-se perfeitamente com sistemas hospitalares existentes, como EHRs (Electronic Health Records) e sistemas de gerenciamento hospitalar. Isso facilita a implementação e garante uma operação contínua.",
+      "Sim, nossa solução foi projetada para integrar-se perfeitamente com sistemas hospitalares existentes, como EHRs (Electronic Health Records). Isso facilita a implementação e garante uma operação contínua.",
   },
   {
     question: "Quais são os requisitos para instalar a solução da HealthFlow?",
@@ -93,7 +93,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         >
           <path
             d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
-            stroke="#4F46E5"
+            stroke="rgb(20, 148, 255)"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 
-import { AmazonLogo } from "../assets/images/logos/AmazonLogo";
-import { DropboxLogo } from "../assets/images/logos/DropboxLogo";
-import { NetflixLogo } from "../assets/images/logos/NetflixLogo";
-import { SlackLogo } from "../assets/images/logos/SlackLogo";
-import { SpotifyLogo } from "../assets/images/logos/SpotifyLogo";
-import { StripeLogo } from "../assets/images/logos/StripeLogo";
+import fiapLogo from "../assets/images/logos/FiapLogo.png";
 
 export const Partner = () => (
   <section className="py-12 sm:py-24 bg-bgDark1 w-full  lg:mt-16 mb-8 lg:mb-16">
@@ -20,7 +15,8 @@ export const Partner = () => (
           <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
             <div className="flex flex-col">
               <h2 className="mb-2  text-2xl font-bold tracking-normal text-primaryText">
-                Aprovado pelas instituições e hospitais de
+                {/* Aprovado pelas instituições e hospitais de */}
+                Aprovado pelas instituições de
               </h2>
               <h2 className="text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-secondaryColor">
                 referência no Brasil
@@ -28,25 +24,9 @@ export const Partner = () => (
             </div>
           </div>
           <div className="w-2/3 sm:w-[620px] lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">
-            <div className="flex flex-wrap -m-4">
+            <div className="flex flex-wrap -m-4 justify-center">
               <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
-                <AmazonLogo />
-              </div>
-              <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
-                <DropboxLogo />
-              </div>
-              <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
-                <NetflixLogo />
-              </div>
-              <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
-                <StripeLogo />
-              </div>
-
-              <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
-                <SpotifyLogo />
-              </div>
-              <div className="w-1/2 sm:w-1/3  py-6 flex  justify-center">
-                <SlackLogo />
+                <img src={fiapLogo.src} alt="Logo FIAP" />
               </div>
             </div>
           </div>

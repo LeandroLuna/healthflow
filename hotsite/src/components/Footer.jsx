@@ -8,20 +8,19 @@ export const Footer = () => {
           <div className="flex flex-wrap justify-center">
             <div className="w-full lg:w-1/2 mb-16 lg:mb-0">
               <div className="flex justify-center items-center grow basis-0">
-                <div className="text-white mr-2 text-6xl">
-                  {/* <TailcastLogo /> */}
-                </div>
                 <div className="text-white font-['Inter'] font-bold text-xl">
                   HealthFlow
                 </div>
               </div>
               <p className="mb-10 mt-4 text-gray-400 leading-loose text-center mx-auto lg:mx-0">
-              Transformando a gestão hospitalar com inteligência artificial.
+                Transformando a gestão hospitalar com inteligência!
               </p>
               <div className="mx-auto lg:mx-0 flex justify-center">
                 <a
                   className="inline-block w-10 h-10 p-2 pt-[0.55rem] outlined-button"
-                  href="#"
+                  href="https://www.linkedin.com/company/healthfl/"
+                  target="blank"
+                  rel="noopener"
                   aria-label="LinkedIn"
                 >
                   <LinkedinIcon />

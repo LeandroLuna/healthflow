@@ -39,8 +39,8 @@ const membersData = [
 ];
 
 export const Team = () => (
-  <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark2 relative" id="team">
-    <div className="absolute -top-16" />
+  <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark2 relative">
+    <div className="absolute -top-16" id="team" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
         initial={{ opacity: 0 }}
@@ -56,11 +56,11 @@ export const Team = () => (
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {membersData.map((member, index) => (
             <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4 md:h-[35rem] justify-between"
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4 h-[20rem] lg:h-[35rem] justify-between"
               key={`${member.name}-${index}`}
             >
               <div className="content-text-white">{member.description}</div>
-              <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
+              <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4 justify-center">
                 <div className="flex items-center">
                   <img
                     src={member.image.src}
