@@ -53,7 +53,7 @@ export const Hero = () => {
             <img
               src={platform.src}
               alt="Platform image"
-              className="w-4/5 2xl:w-[1000px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
+              className="w-4/5 lg:w-[900px] 2xl:w-[1000px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
             />
           </div>
         </motion.div>
