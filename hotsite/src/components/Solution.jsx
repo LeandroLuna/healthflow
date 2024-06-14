@@ -29,7 +29,7 @@ export const Solution = () => {
                     HealthFlow: o futuro da gestão em saúde
                   </h2>
                   <p className="mb-10 text-secondaryText leading-loose">
-                    O HealthFlow transforma a gestão hospitalar com uma plataforma avançada de Hospital System Information (HIS), integrada com Inteligência Artificial. Nossa solução utiliza análise de dados, geolocalização e visão computacional para otimizar o fluxo de pacientes e recursos, oferecendo uma gestão informada 360°.
+                    O HealthFlow transforma a gestão hospitalar com uma plataforma avançada de Hospital Information System (HIS), integrada com Inteligência Artificial. Nossa solução utiliza inúmeras ferramentas como análise de dados, geolocalização e visão computacional para otimizar o fluxo de pacientes e recursos, oferecendo uma gestão informada 360°. 
                   </p>
                   <ul className="lg:mb-6 text-primaryText">
                     <li className="mb-4 flex">
@@ -53,6 +53,9 @@ export const Solution = () => {
                       <span>Heatmap do congestionamento de pacientes</span>
                     </li>
                   </ul>
+                  <p className="mt-10 text-secondaryText leading-loose">
+                    A plataforma integra diversos módulos de gestão em um só lugar, proporcionando uma visão unificada e abrangente das operações hospitalares. Além disso, através da IA, estamos comprometidos não apenas com a gestão do momento atual, mas também com a antecipação e planejamento dos momentos futuros, garantindo uma administração hospitalar proativa e eficiente.
+                  </p>
                 </div>
               </div>
               <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
@@ -127,7 +130,7 @@ export const Solution = () => {
                 <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
                   Saúde otimizada com conformidade
                 </h2>
-                <p className="mb-12 text-secondaryText leading-loose">
+                <p className="mb-10 text-secondaryText leading-loose">
                   HealthFlow não só melhora a gestão hospitalar, mas também segue rigorosamente as regulamentações do HIPAA e outras normas pertinentes, garantindo um ambiente seguro e conforme para todos os dados hospitalares.
                 </p>
                 <ul className="lg:mb-6 text-primaryText">
@@ -144,6 +147,9 @@ export const Solution = () => {
                     <span>Comunicação clara e eficaz</span>
                   </li>
                 </ul>
+                <p className="mt-10 text-secondaryText leading-loose">
+                  Estamos igualmente comprometidos com a transparência das informações, auxiliando os pacientes na tomada de decisão deles ao fornecer dados cruciais, como a lotação do hospital em determinada data, indo além de uma gestão reclusa somente ao hospital.                
+                </p>
               </div>
             </div>
           </div>
