@@ -23,6 +23,16 @@ const FAQData = [
       "Nossa dedicada equipe de suporte está aqui para ajudar. Você pode nos contatar através do formulário de contato em nosso site, enviar um e-mail ou conversar conosco via chat ao vivo. Ficaremos felizes em ajudar com quaisquer perguntas ou preocupações que você possa ter.",
   },
   {
+    question: "Como o HealthFlow auxilia na fiscalização e proteção jurídica?",
+    answer:
+      "O HealthFlow facilita a fiscalização ao registrar atendimentos de forma precisa e transparente. Utilizamos mapas de calor e análise de dados para monitorar a movimentação e ações dos profissionais de saúde, o que contribui para a proteção jurídica ao fornecer evidências concretas em casos de auditorias e processos legais.",
+  },
+  {
+    question: "Quais métricas são melhoradas com a solução HealthFlow?",
+    answer:
+      "O HealthFlow melhora diversas métricas operacionais, como eficiência no uso de leitos e recursos, redução do tempo de espera dos pacientes, e otimização dos processos de enfermagem com indicadores como Nursing Activities Score (NAS), Sistema de Classificação de Pacientes (SCP) e Índice de Gravidade de Pacientes (IGP). Além disso, a plataforma oferece insights valiosos para uma gestão proativa e informada, contribuindo para uma melhor experiência tanto para pacientes quanto para profissionais de saúde.",
+  },
+  {
     question: "Como é garantida a segurança dos dados coletados?",
     answer:
       "Levamos a segurança dos dados muito a sério. Utilizamos criptografia de ponta a ponta e seguimos as melhores práticas da indústria para proteger todas as informações coletadas e processadas por nossa solução.",

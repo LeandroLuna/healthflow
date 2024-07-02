@@ -29,7 +29,7 @@ export const Solution = () => {
                     HealthFlow: o futuro da gestão em saúde
                   </h2>
                   <p className="mb-10 text-secondaryText leading-loose">
-                    O HealthFlow transforma a gestão hospitalar com uma plataforma avançada de Hospital Information System (HIS), integrada com Inteligência Artificial. Nossa solução utiliza inúmeras ferramentas como análise de dados, geolocalização e visão computacional para otimizar o fluxo de pacientes e recursos, oferecendo uma gestão informada 360°. 
+                    O HealthFlow transforma a gestão hospitalar com uma plataforma avançada de Hospital Information System (HIS), integrada com Inteligência Artificial. Nossa solução utiliza inúmeras ferramentas como análise de dados em tempo real, geolocalização, visão computacional para monitoramento da equipe médica afim de otimizar o fluxo de pacientes e recursos, oferecendo uma gestão informada e abrangente 360°.
                   </p>
                   <ul className="lg:mb-6 text-primaryText">
                     <li className="mb-4 flex">
@@ -46,7 +46,7 @@ export const Solution = () => {
                     </li>
                     <li className="mb-4 flex">
                       <CheckArrowIcon />
-                      <span>Gestão de inventário</span>
+                      <span>Acompanhamento da movimentação e atuação dos profissionais de saúde</span>
                     </li>
                     <li className="flex">
                       <CheckArrowIcon />
@@ -54,7 +54,7 @@ export const Solution = () => {
                     </li>
                   </ul>
                   <p className="mt-10 text-secondaryText leading-loose">
-                    A plataforma integra diversos módulos de gestão em um só lugar, proporcionando uma visão unificada e abrangente das operações hospitalares. Além disso, através da IA, estamos comprometidos não apenas com a gestão do momento atual, mas também com a antecipação e planejamento dos momentos futuros, garantindo uma administração hospitalar proativa e eficiente.
+                    A plataforma centraliza informações essenciais para uma gestão eficiente, melhorando a transparência e a eficiência na gestão hospitalar. Com o uso de IA, o HealthFlow prevê demandas futuras, permitindo uma administração proativa e informada, otimizando os recursos e melhorando os indicadores da instituição de saúde.
                   </p>
                 </div>
               </div>
@@ -148,7 +148,7 @@ export const Solution = () => {
                   </li>
                 </ul>
                 <p className="mt-10 text-secondaryText leading-loose">
-                  Estamos igualmente comprometidos com a transparência das informações, auxiliando os pacientes na tomada de decisão deles ao fornecer dados cruciais, como a lotação do hospital em determinada data, indo além de uma gestão reclusa somente ao hospital.                
+                  Estamos igualmente comprometidos com a transparência das informações, auxiliando os pacientes na tomada de decisão deles ao fornecer dados cruciais, como a localização de banheiros, lanchonetes e dados sobre a localização de pacientes internados, indo além de uma gestão reclusa somente ao hospital.                
                 </p>
               </div>
             </div>

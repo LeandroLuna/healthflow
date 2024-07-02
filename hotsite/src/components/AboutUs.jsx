@@ -84,7 +84,7 @@ export const AboutUs = () => {
               Transformando o futuro da gestão hospitalar
             </h2>
             <p className="lg:mb-12 text-secondaryText leading-loose">
-              Queremos ser a referência em soluções de gestão hospitalar, utilizando a Inteligência Artificial para antecipar demandas e otimizar recursos, melhorando a qualidade do atendimento em hospitais e clínicas ao redor do mundo.
+              Na HealthFlow, nossa missão é transformar a gestão hospitalar por meio da inovação e tecnologia. Estamos comprometidos em proporcionar soluções avançadas baseadas em Inteligência Artificial que antecipem demandas, otimizem recursos e melhorem significativamente a qualidade do atendimento em hospitais e clínicas ao redor do mundo. Buscamos não apenas resolver desafios operacionais complexos, mas também promover uma gestão hospitalar mais eficiente e humanizada, contribuindo para o bem-estar dos pacientes e a excelência dos serviços de saúde.
             </p>
           </div>
         </div>

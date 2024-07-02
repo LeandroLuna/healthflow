@@ -41,7 +41,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Uma plataforma HIS all-in-one impulsionada pela Inteligência Artificial para otimizar a experiência do paciente e a eficiência operacional.
+            Uma plataforma HIS impulsionada pela Inteligência Artificial para otimizar a experiência dos pacientes e a eficiência operacional.
           </h2>
         </motion.div>
         <motion.div

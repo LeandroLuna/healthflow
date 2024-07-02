@@ -4,25 +4,11 @@ import { motion } from "framer-motion";
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/images/icons/CheckArrowIcon";
 
-const fastFeatures = [
-  "Conjuntos de módulos para problemas específicos, como TrackCare (módulos de localização indoor e heatmap)",
-  "Licenças para acessos aos módulos definidos",
-  "Suporte técnico básico incluído no primeiro ano, com taxa recorrente nos anos subsequente.",
-];
-
-const completeSolutionFeatures = [
-  "Todos os módulos disponíveis",
-  "Licenciamento para hospitais de grande porte",
-  "Suporte técnico 24/7",
-  "Atualizações regulares",
-];
-
-const consultancyFeatures = [
-  "Consultoria para seleção de módulos",
-  "Implementação de módulos",
-  "Licenciamento adaptado",
-  "Suporte técnico especializado",
-  "Consultoria contínua",
+const saasFeatures = [
+  "Licenciamento por período de uso",
+  "Precificação de acordo com a classe de atendimento da instituição",
+  "Escalabilidade conforme o crescimento do hospital ou clínica",
+  "Suporte técnico contínuo e atualizações regulares incluídas",
 ];
 
 export const BusinessModel = () => {
@@ -48,35 +34,17 @@ export const BusinessModel = () => {
                 Explore como entregamos valor aos nossos clientes através do nosso modelo de negócios inovador.
               </p>
             </div>
-            <div className="flex flex-wrap flex-col lg:flex-row -mx-4 items-center mt-20">
-              <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-bgDark3 rounded-3xl h-[30rem] xs:h-[25rem] lg:h-[35rem]">
-                  <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Implementação rápida
+            <div className="flex flex-wrap -mx-4 items-center mt-20">
+              <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 lg:justify-center">
+                <div className="p-8 bg-bgDark3 rounded-3xl h-[35rem] lg:h-[40rem]">
+                  <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-center">
+                    Solução como Serviço (SaaS)
                   </h3>
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-300 leading-loose text-left">
-                    Pacotes de implantação rápida com módulos especificos pré-configurados.
-                  </p>
-                  <ul className="mb-2 2xl:mb-6 text-primaryText">
-                    {fastFeatures.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="px-8 py-8 bg-bgDark3 rounded-3xl h-[35rem] xs:h-[30rem] lg:h-[40rem]">
-                  <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-left">
-                    Solução completa
-                  </h3>
-                  <p className="mt-8 mb-8 2xl:mb-12 text-gray-300 leading-loose text-left">
-                    Inclui todos os módulos disponíveis para uma solução abrangente.
+                  <p className="mt-8 mb-8 2xl:mb-12 text-gray-300 leading-loose text-center">
+                    Oferecemos uma solução flexível baseada em SaaS para hospitais e clínicas.
                   </p>
                   <ul className="mb-14 text-primaryText">
-                    {completeSolutionFeatures.map((text, index) => (
+                    {saasFeatures.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
@@ -90,24 +58,6 @@ export const BusinessModel = () => {
                   >
                     Lista de espera
                   </button>
-                </div>
-              </div>
-              <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-bgDark3 rounded-3xl h-[30rem] xs:h-[25rem] lg:h-[35rem]">
-                  <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Consultoria especializada
-                  </h3>
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-300 leading-loose text-left">
-                    Serviços de consultoria para seleção e implementação de módulos.
-                  </p>
-                  <ul className="mb-2 2xl:mb-6 text-primaryText">
-                    {consultancyFeatures.map((text, index) => (
-                      <li className="mb-4 flex" key={`${text}-${index}`}>
-                        <CheckArrowIcon />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             </div>
