@@ -34,8 +34,8 @@ export const BusinessModel = () => {
                 Explore como entregamos valor aos nossos clientes através do nosso modelo de negócios inovador.
               </p>
             </div>
-            <div className="flex flex-wrap -mx-4 items-center mt-20">
-              <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 lg:justify-center">
+            <div className="flex flex-wrap -mx-4 items-center mt-20 justify-center">
+              <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl h-[35rem] lg:h-[40rem]">
                   <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-center">
                     Solução como Serviço (SaaS)
