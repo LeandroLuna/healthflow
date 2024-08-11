@@ -38,7 +38,7 @@ export const BusinessModel = () => {
               <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl h-[35rem] lg:h-[40rem]">
                   <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-center">
-                    Solução como Serviço (SaaS)
+                    Software como Serviço (SaaS)
                   </h3>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-300 leading-loose text-center">
                     Oferecemos uma solução flexível baseada em SaaS para hospitais e clínicas.
