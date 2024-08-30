@@ -40,10 +40,10 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
-      <header>
+      <head>
         <title>HealthFlow</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-      </header>
+      </head>
       <body>
         <SessionProvider session={session}>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
