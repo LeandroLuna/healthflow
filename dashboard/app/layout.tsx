@@ -3,6 +3,7 @@ import { AppProvider } from '@toolpad/core/nextjs';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import MapIcon from '@mui/icons-material/Map';
+import PeopleIcon from '@mui/icons-material/People';
 import type { Navigation } from '@toolpad/core';
 import { SessionProvider, signIn, signOut } from 'next-auth/react';
 import { auth } from '../auth';
@@ -23,6 +24,11 @@ const NAVIGATION: Navigation = [
     title: 'Mapa',
     icon: <MapIcon />,
   },
+  {
+    segment: 'counter',
+    title: 'Pacientes',
+    icon: <PeopleIcon />,
+  }
 ];
 
 const BRANDING = {
