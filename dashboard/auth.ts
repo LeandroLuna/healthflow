@@ -28,6 +28,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     authorized({ auth: session, request: { nextUrl } }) {
       const isLoggedIn = !!session?.user;
       const isPublicPage = nextUrl.pathname.startsWith('/public');
+      console.log(nextUrl);
 
       if (isPublicPage || isLoggedIn) {
         return true;
