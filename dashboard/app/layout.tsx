@@ -42,7 +42,7 @@ const AUTHENTICATION = {
 };
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
-  // const session = await auth();
+  const session = await auth();
 
   return (
     <html lang="en">
@@ -51,19 +51,19 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
       <body>
-        {/* <SessionProvider session={session}> */}
+        <SessionProvider session={session}>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
             <AppProvider
               navigation={NAVIGATION}
               branding={BRANDING}
-              // session={session}
+              session={session}
               authentication={AUTHENTICATION}
               theme={theme}
             >
               {props.children}
             </AppProvider>
           </AppRouterCacheProvider>
-        {/* </SessionProvider> */}
+        </SessionProvider>
       </body>
     </html>
   );
