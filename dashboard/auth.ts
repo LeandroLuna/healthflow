@@ -29,11 +29,13 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       const isLoggedIn = !!session?.user;
       const isPublicPage = nextUrl.pathname.startsWith('/public');
 
-      if (isPublicPage || isLoggedIn) {
-        return true;
-      }
+      // if (isPublicPage || isLoggedIn) {
+      //   return true;
+      // }
 
-      return false; // Redirect unauthenticated users to login page
+      // return false; // Redirect unauthenticated users to login page
+
+      return true;
     },
   }, 
 });
