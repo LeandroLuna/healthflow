@@ -12,7 +12,7 @@ import { CheckArrowIcon } from "../assets/images/icons/CheckArrowIcon";
 export const Solution = () => {
   return (
       <section
-          className="w-full bg-bgDark2 pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0 md:pt-52"
+          className="w-full bg-bgDark2 pt-80 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0 md:pt-40"
           id="solution"
         >
           <motion.div

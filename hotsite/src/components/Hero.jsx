@@ -41,7 +41,10 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Uma plataforma HIS impulsionada pela Inteligência Artificial para otimizar a experiência dos pacientes e a eficiência operacional.
+            Uma plataforma HIS em tempo real impulsionada pela Inteligência Artificial e Visão Computacional para otimizar a experiência dos pacientes e a eficiência operacional.
+            <br />
+            <br />
+            Acesse o <a href="https://healthflow-rho.vercel.app/" target="_blank" rel="noopener"><span className="underline underline-offset-4">protótipo funcional</span></a> e veja como a plataforma pode revolucionar a gestão do seu hospital. 
           </h2>
         </motion.div>
         <motion.div
@@ -50,11 +53,15 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="relative w-screen flex justify-center mt-20 md:mt-48">
-            <img
-              src={platform.src}
-              alt="Platform image"
-              className="w-4/5 lg:w-[900px] 2xl:w-[1000px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
-            />
+            <iframe
+              width="80%"
+              height="500"
+              src="https://www.youtube.com/embed/UdNOVCy_5JI"
+              title="HealthFlow Dashboard"
+              frameBorder="0"
+              allowFullScreen
+              className="rounded-xl main-border-gray hero-dashboard-border-gradient lg:w-[900px] 2xl:w-[1000px] mx-auto absolute z-10"
+            ></iframe>
           </div>
         </motion.div>
         <div className="relative w-screen flex justify-center ">
