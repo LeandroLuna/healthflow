@@ -4,6 +4,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import MapIcon from '@mui/icons-material/Map';
 import PeopleIcon from '@mui/icons-material/People';
+import Diversity1Icon from '@mui/icons-material/Diversity1';
 import type { Navigation } from '@toolpad/core';
 import { SessionProvider, signIn, signOut } from 'next-auth/react';
 import { auth } from '../auth';
@@ -18,6 +19,11 @@ const NAVIGATION: Navigation = [
     segment: '',
     title: 'Dashboard',
     icon: <DashboardIcon />,
+  },
+  {
+    segment: 'sizing',
+    title: 'Dimensionamento',
+    icon: <Diversity1Icon />,
   },
   {
     segment: 'map',
