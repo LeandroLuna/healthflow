@@ -1,9 +1,12 @@
 'use client';
-import * as React from 'react';
-import { useState } from 'react';
+
+import React, { useState, useCallback } from 'react';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import MQTTMap from '../../components/MQTTMap';
 import PeopleCounter from '../../components/PeopleCounter';
+import { ref, set } from 'firebase/database';
+import { database } from '../../utils/firebaseConfig';
 
 export default function SizingPage() {
   const [peopleCount, setPeopleCount] = useState(0);
@@ -31,6 +34,18 @@ export default function SizingPage() {
     }
   };
 
+  const addRandomNurse = useCallback(() => {
+    const randomId = Math.floor(Math.random() * 10000);
+    const randomX = Math.random() * 5;
+    const randomY = Math.random() * 2;
+
+    set(ref(database, 'coordinates'), {
+      id: randomId,
+      x: randomX,
+      y: randomY
+    });
+  }, []);
+
   return (
     <>
       <div style={{ "marginBottom": 20 }}>
@@ -40,6 +55,9 @@ export default function SizingPage() {
       </div>
       <MQTTMap onNurseCountChange={setNurseCount}/>
       <PeopleCounter onCountChange={setPeopleCount} showCounter={false} />
+      <Button variant="contained" color="primary" onClick={addRandomNurse}>
+        Adicionar enfermeiro aleatório
+       </Button>
     </>
   );
 }
