@@ -35,14 +35,18 @@ export default function SizingPage() {
   };
 
   const addRandomNurse = useCallback(() => {
-    const randomId = Math.floor(Math.random() * 10000);
+    const randomId = Math.floor(Math.random() * 10000).toString();
     const randomX = Math.random() * 5;
     const randomY = Math.random() * 2;
 
-    set(ref(database, 'coordinates'), {
+    set(ref(database, `coordinates`), {
       id: randomId,
       x: randomX,
       y: randomY
+    }).then(() => {
+      setNurseCount((prevCount) => prevCount + 1);
+    }).catch((error) => {
+      console.error('Erro ao adicionar enfermeiro:', error);
     });
   }, []);
 
@@ -55,9 +59,9 @@ export default function SizingPage() {
       </div>
       <MQTTMap onNurseCountChange={setNurseCount}/>
       <PeopleCounter onCountChange={setPeopleCount} showCounter={false} />
-      <Button variant="contained" color="primary" onClick={addRandomNurse}>
+      {/* <Button variant="contained" color="primary" onClick={addRandomNurse}>
         Adicionar enfermeiro aleatório
-       </Button>
+      </Button> */}
     </>
   );
 }
