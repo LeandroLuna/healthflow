@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import { Box } from '@mui/material';
+import { Box, Paper, Stack, Typography } from '@mui/material';
 import * as cocoSsd from '@tensorflow-models/coco-ssd';
 import * as tf from '@tensorflow/tfjs';
 
@@ -100,16 +100,20 @@ const PeopleCounter: React.FC<PeopleCounterProps> = ({ onCountChange, showCounte
   }, []);
 
   return (
-    <Box>
-      {showCounter && ( 
+    <Stack sx={{
+      justifyContent: "space-around",
+      alignItems: "center",
+    }}>
+      {showCounter && (
         <>
-          <h1>Contador de Pessoas</h1>
-          <p>Contagem: {count}</p>
+          <Paper elevation={1} sx={{  margin: 1, backgroundColor: '#023f81', padding: 2, borderRadius: 3 }}>
+            <Typography variant="h6" sx={{ fontFamily: 'opensanshebrewcondensed-regular', textTransform: 'uppercase', color: 'white' }} >Contagem: <span style={{ fontWeight: 'bold' }}> {count} </span></Typography>
+          </Paper>
         </>
       )}
       <video ref={videoRef} autoPlay style={{ display: 'none' }} />
-      <canvas ref={canvasRef} width={640} height={480} style={{ border: '1px solid black', display: showCounter ? 'block' : 'none'}} />
-    </Box>
+      <canvas ref={canvasRef} width={640} height={480} style={{ border: '1px solid black', display: showCounter ? 'block' : 'none' }} />
+    </Stack>
   );
 };
 

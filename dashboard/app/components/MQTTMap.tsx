@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Stack, Typography } from '@mui/material';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../utils/firebaseConfig';
 
@@ -15,9 +15,9 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
   const [image, setImage] = useState<HTMLImageElement | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const maxX = 5;
-  const maxY = 2;
+  const maxX = 5.7;
   const yAdjustFactor = 1;
+  const maxY = 11 - yAdjustFactor;
 
   useEffect(() => {
     const img = new Image();
@@ -102,10 +102,15 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
   }, [nurseIds, onNurseCountChange, imageLoaded, image]);
 
   return (
-    <Box>
-      <Typography variant="h5">Mapa RTLS</Typography>
+
+    <Stack sx={{
+      justifyContent: "space-around",
+      alignItems: "center",
+    }}>
+      <Typography variant="h6" sx={{ fontFamily: 'opensanshebrewcondensed-regular', textTransform: 'uppercase' }} >Localização em tempo real</Typography>
       <canvas ref={canvasRef} style={{ border: '1px solid black' }} />
-    </Box>
+    </Stack>
+
   );
 };
 

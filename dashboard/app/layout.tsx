@@ -9,6 +9,7 @@ import type { Navigation } from '@toolpad/core';
 import { SessionProvider, signIn, signOut } from 'next-auth/react';
 import { auth } from '../auth';
 import theme from '../theme';
+import '../index.css';
 
 const NAVIGATION: Navigation = [
   {

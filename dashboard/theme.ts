@@ -5,7 +5,7 @@ const lightTheme = createTheme();
 const darkTheme = createTheme({ palette: { mode: 'dark' } });
 const theme = {
   light: lightTheme,
-  dark: darkTheme
+  dark: darkTheme,
 };
 
 export default theme;
