@@ -35,25 +35,24 @@ export default function SizingPage() {
     }
   };
 
-  const addRandomNurse = useCallback(() => {
-    const randomId = Math.floor(Math.random() * 10000).toString();
-    const randomX = Math.random() * 5;
-    const randomY = Math.random() * 2;
+  // const addRandomNurse = useCallback(() => {
+  //   const randomId = Math.floor(Math.random() * 10000).toString();
+  //   const randomX = Math.random() * 5;
+  //   const randomY = Math.random() * 2;
 
-    set(ref(database, `coordinates`), {
-      id: randomId,
-      x: randomX,
-      y: randomY
-    }).then(() => {
-      setNurseCount((prevCount) => prevCount + 1);
-    }).catch((error) => {
-      console.error('Erro ao adicionar enfermeiro:', error);
-    });
-  }, []);
+  //   set(ref(database, `coordinates`), {
+  //     id: randomId,
+  //     x: randomX,
+  //     y: randomY
+  //   }).then(() => {
+  //     setNurseCount((prevCount) => prevCount + 1);
+  //   }).catch((error) => {
+  //     console.error('Erro ao adicionar enfermeiro:', error);
+  //   });
+  // }, []);
 
   return (
     <>
-
       <Paper elevation={2} sx={{ margin: 2, padding: 2, borderRadius: 2, backgroundColor: '#023f81' }}>
         <Typography variant="h4" sx={{ fontFamily: 'opensanshebrewcondensed-regular', textTransform: 'uppercase', fontWeight: 'bold', textAlign: 'center', color: 'whitesmoke' }} >Dimensionamento</Typography>
       </Paper>
@@ -76,7 +75,6 @@ export default function SizingPage() {
         </Paper>
       </Box>
       <Stack sx={{ justifyContent: "space-around", alignItems: "center" }}>
-
         <MQTTMap onNurseCountChange={setNurseCount} />
       </Stack>
       <PeopleCounter onCountChange={setPeopleCount} showCounter={false} />
