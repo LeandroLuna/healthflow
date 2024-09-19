@@ -15,9 +15,8 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
   const [image, setImage] = useState<HTMLImageElement | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
   
-  const yAdjustFactor = 1;
   const maxX = 5.7;
-  const maxY = 11 - yAdjustFactor;
+  const maxY = 11;
 
   useEffect(() => {
     const img = new Image();
@@ -46,7 +45,7 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
 
       if (data) {
         const { id, x, y } = data;
-        const adjustedY = y - yAdjustFactor;
+        console.log(x, y);
 
         if (id && !nurseIds.includes(id)) {
           setNurseIds((prevIds) => {
@@ -67,7 +66,7 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
             ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 
             let scaledX = (x / maxX) * canvas.width;
-            let scaledY = (adjustedY / maxY) * canvas.height;
+            let scaledY = (y / maxY) * canvas.height;
 
             scaledX = Math.max(0, Math.min(scaledX, canvas.width));
             scaledY = Math.max(0, Math.min(scaledY, canvas.height));
