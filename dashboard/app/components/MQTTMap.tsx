@@ -14,9 +14,9 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
   const [nurseIds, setNurseIds] = useState<string[]>([]);
   const [image, setImage] = useState<HTMLImageElement | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
-
-  const maxX = 5.7;
+  
   const yAdjustFactor = 1;
+  const maxX = 5.7;
   const maxY = 11 - yAdjustFactor;
 
   useEffect(() => {
@@ -90,7 +90,7 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
 
             ctx.fillStyle = 'black';
             ctx.font = '12px Arial';
-            ctx.fillText(`ID: ${id}, x: ${scaledX.toFixed(2)}, y: ${adjustedY.toFixed(2)}`, legendX, legendY);
+            ctx.fillText(`ID: ${id}, x: ${scaledX.toFixed(2)}, y: ${scaledY.toFixed(2)}`, legendX, legendY);
           }
         }
       }
