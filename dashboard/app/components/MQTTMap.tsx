@@ -44,7 +44,8 @@ const MQTTMap: React.FC<MQTTMapProps> = ({ onNurseCountChange }) => {
       const data = snapshot.val();
 
       if (data) {
-        const { id, x, y } = data;
+        let { id, x, y } = data;
+        id = 1;
         console.log(x, y);
 
         if (id && !nurseIds.includes(id)) {
